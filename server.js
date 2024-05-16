@@ -2,7 +2,7 @@ const net = require('net');
 const readline = require('readline');
 
 const server = net.createServer((con) => {
-    console.log("Recibi una conexión remota");
+    console.log("Recibi una conexion remota");
 
     con.write("Servidor iniciado correctamente\n");
 
@@ -20,7 +20,7 @@ const server = net.createServer((con) => {
     });
 
     con.on('end', () => {
-        console.log('Conexión terminada');
+        console.log('Conexion terminada');
     });
 
     con.on('error', (err) => {
